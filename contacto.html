@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto del Sistema de Gestión Gastronómica. Solicita cotizaciones, soporte técnico o consultas generales.">
+    <title>Contacto - Sistema de Gestión Gastronómica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal con Navegación -->
+    <header>
+        <h1>Sistema de Gestión Gastronómica</h1>
+        <h2>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Atención al Cliente & Soporte Técnico
+        </h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produccion.html">Proceso: Producción y Despacho</a></li>
+                <li><a href="stock.html">Proceso: Control de Stock</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="contacto">
+            <!-- Hero Header de la Sección -->
+            <div class="contact-hero-header">
+                <h2>¿Tienes dudas o deseas implementar nuestro sistema?</h2>
+                <p>Estamos aquí para ayudarte a optimizar la gestión de tu restaurante, bar o cocina industrial. Contáctanos y recibe asesoría personalizada.</p>
+            </div>
+
+            <!-- Contenedor Grid Principal -->
+            <div class="contact-grid">
+                
+                <!-- Columna Izquierda: Información y Multimedia -->
+                <div class="info-card">
+                    <!-- Integración Multimedia: Imagen y Video -->
+                    <div class="media-container">
+                        <div class="media-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                            Demostración del Sistema
+                        </div>
+                        
+                        <!-- Imagen Representativa del Sector Gastronómico / Tecnológico -->
+                        <img 
+                            src="assets/contacto_gastronomia.jpg" 
+                            alt="Sistema de Gestión Gastronómica en Cocina" 
+                            class="multimedia-img" 
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80'"
+                        >
+
+                        <!-- Elemento Video HTML5 con Controles -->
+                        <video controls poster="assets/contacto_gastronomia.jpg" class="multimedia-video">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video HTML5.
+                        </video>
+
+                        <!-- Elemento Audio HTML5 con Controles (Presentación de voz) -->
+                        <audio controls class="multimedia-audio">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Tu navegador no soporta la reproducción de audio HTML5.
+                        </audio>
+                    </div>
+
+                    <!-- Datos Directos de Contacto -->
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-info">
+                                <h4>Ubicación Central</h4>
+                                <p>Campus UTP Chimbote - Av. Universidad s/n, Ancash, Perú</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">📧</div>
+                            <div class="detail-info">
+                                <h4>Correo Electrónico</h4>
+                                <p>contacto@gestiongastronomica.utp.edu.pe</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <div class="detail-info">
+                                <h4>Línea Directa / WhatsApp</h4>
+                                <p>+51 987 654 321 | (043) 32-4590</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">⏰</div>
+                            <div class="detail-info">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 8:00 AM - 7:00 PM | Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Tarjeta del Formulario de Contacto -->
+                <div class="form-card">
+                    <h3 class="form-title">Envíanos un Mensaje</h3>
+                    <p class="form-subtitle">Completa los campos y un asesor técnico se comunicará contigo a la brevedad.</p>
+
+                    <!-- Mensaje de Confirmación (Feedback dinámico) -->
+                    <div id="formStatus" class="form-status">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</span>
+                    </div>
+
+                    <!-- Formulario de Contacto -->
+                    <form id="contactForm" class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); document.getElementById('formStatus').classList.add('success'); this.reset();">
+                        
+                        <!-- Campo 1: Nombre Completo -->
+                        <div class="form-group">
+                            <label for="nombre">
+                                Nombre Completo
+                                <span class="required-badge">* Obligatorio</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                class="form-control" 
+                                placeholder="Ej. Carlos Mendoza" 
+                                required 
+                                autocomplete="name"
+                            >
+                        </div>
+
+                        <!-- Campo 2: Correo Electrónico -->
+                        <div class="form-group">
+                            <label for="email">
+                                Correo Electrónico
+                                <span class="required-badge">* Obligatorio</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                placeholder="ejemplo@restaurante.com" 
+                                required 
+                                autocomplete="email"
+                            >
+                        </div>
+
+                        <!-- Campo 3: Teléfono -->
+                        <div class="form-group">
+                            <label for="telefono">
+                                Teléfono / Celular
+                                <span class="required-badge">* Obligatorio</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                class="form-control" 
+                                placeholder="+51 987 654 321" 
+                                required 
+                                pattern="[0-9+\s\-]{7,15}"
+                                title="Por favor ingresa un número de teléfono válido (mínimo 7 dígitos)"
+                                autocomplete="tel"
+                            >
+                        </div>
+
+                        <!-- Campo 4: Asunto o Tipo de Consulta (Menú Desplegable) -->
+                        <div class="form-group">
+                            <label for="asunto">
+                                Asunto o Tipo de Consulta
+                                <span class="required-badge">* Obligatorio</span>
+                            </label>
+                            <select id="asunto" name="asunto" class="form-control" required>
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="Cotización">Cotización de Software</option>
+                                <option value="Consulta General">Consulta General</option>
+                                <option value="Soporte Técnico">Soporte Técnico</option>
+                                <option value="Sugerencia">Sugerencia</option>
+                            </select>
+                        </div>
+
+                        <!-- Campo 5: Mensaje -->
+                        <div class="form-group">
+                            <label for="mensaje">
+                                Mensaje o Requerimiento
+                                <span class="required-badge">* Obligatorio</span>
+                            </label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje" 
+                                class="form-control" 
+                                rows="5" 
+                                placeholder="Describe brevemente tus necesidades o inquietudes sobre el sistema..." 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <!-- Campo 6: Checkbox de Aceptación de Términos -->
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                <span class="checkmark"></span>
+                                Directiva de privacidad: Acepto los <a href="#" onclick="alert('Términos y condiciones aceptados para la consulta.'); return false;">términos y condiciones</a> de uso.
+                            </label>
+                        </div>
+
+                        <!-- Campo 7: Botón de Envío -->
+                        <button type="submit" class="btn-submit">
+                            <span>Enviar Mensaje</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página Profesional -->
+    <footer>
+        <h3>Equipo de Desarrollo - UTP Chimbote</h3>
+        <ul>
+            <li>Vallejos Lescano Carlos</li>
+            <li>Arana Esteban Nicole</li>
+            <li>Azaña Marrufo Cristofer</li>
+            <li>Castillo Rodríguez Luis</li>
+        </ul>
+        <p>Docente: Heber Gómez Hurtado | Taller de Programación Web</p>
+        <p class="footer-credits">&copy; 2026 Sistema de Gestión Gastronómica. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
